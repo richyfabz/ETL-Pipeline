@@ -55,14 +55,3 @@ def load_csv(filepath: str) -> pd.DataFrame:
     return df
 
     # Temporary test block
-if __name__ == "__main__":
-    # Test the API fetch
-    df_api = fetch_api_data("https://jsonplaceholder.typicode.com/users")
-    print("API Data:")
-    print(df_api)
-    print()
-
-    # Test the CSV load
-    df_csv = load_csv("data/local_data.csv")
-    print("CSV Data:")
-    print(df_csv)

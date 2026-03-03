@@ -58,28 +58,4 @@ def merge_data(api_df: pd.DataFrame, csv_df: pd.DataFrame) -> pd.DataFrame:
 
     return merged
 
-    # Temporary test block
-if __name__ == "__main__":
-    import pandas as pd
-    from extract import fetch_api_data, load_csv
-
-    # Step 1 - Get the raw data
-    api_df = fetch_api_data("https://jsonplaceholder.typicode.com/users")
-    csv_df = load_csv("Data/local_data.csv")
-
-    # Step 2 - Clean both
-    api_clean = clean_api_data(api_df)
-    csv_clean = clean_csv_data(csv_df)
-
-    print("Cleaned API Data:")
-    print(api_clean)
-    print()
-
-    print("Cleaned CSV Data:")
-    print(csv_clean)
-    print()
-
-    # Step 3 - Merge
-    merged = merge_data(api_clean, csv_clean)
-    print("Merged Data:")
-    print(merged)
+  
