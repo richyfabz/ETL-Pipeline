@@ -4,7 +4,7 @@ A beginner-friendly but production-structured **ETL (Extract, Transform, Load)**
 
 ---
 
-## 📌 What It Does
+##  What It Does
 
 | Stage | Description |
 |---|---|
@@ -62,7 +62,7 @@ pip3 install -r requirements.txt
 
 ---
 
-## 🚀 Run the Pipeline
+##  Run the Pipeline
 
 ```bash
 python3 main.py
@@ -79,7 +79,7 @@ Rows after merge : 10
 Columns          : ['id', 'name', 'email', 'phone', 'website', 'city', 'age', 'signup_date', 'plan']
 
 ── Load ──────────────────────────────────
-✅ Loaded 10 rows into 'users' table at database/etl.db
+Loaded 10 rows into 'users' table at database/etl.db
 
 ── Verify ────────────────────────────────
  id  name   email   ...
@@ -107,7 +107,7 @@ Tests cover:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -119,7 +119,7 @@ Tests cover:
 
 ---
 
-## 💡 Concepts Demonstrated
+## Concepts Demonstrated
 
 - ETL pipeline architecture
 - REST API consumption with error handling

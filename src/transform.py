@@ -59,3 +59,4 @@ def merge_data(api_df: pd.DataFrame, csv_df: pd.DataFrame) -> pd.DataFrame:
     return merged
 
   
+  
