@@ -1,12 +1,12 @@
 from src.extract import fetch_api_data, load_csv
 from src.transform import clean_api_data, clean_csv_data, merge_data
 from src.load import load_to_sqlite, query_table
-
+# Constants for file paths and API URL
 API_URL   = "https://jsonplaceholder.typicode.com/users"
 CSV_PATH  = "data/local_data.csv"
 DB_PATH   = "database/etl.db"
 
-
+# Main pipeline function
 def run_pipeline():
     print("── Extract ───────────────────────────────")
     api_df = fetch_api_data(API_URL)
